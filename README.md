@@ -1,3 +1,4 @@
+[![Docker Repository on Quay](https://quay.io/repository/ckuperst/openfire/status "Docker Repository on Quay")](https://quay.io/repository/ckuperst/openfire)
 # openfire container
 
 Created this quickly for a client that needed to install openfire chat server on RHEL.
