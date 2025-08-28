@@ -2,7 +2,20 @@
 
 Created this quickly for a client that needed to install openfire chat server on RHEL.
 
+# Create ISO
+
+```
+./mkiso.sh
+```
+
+- Downloads prebuilt image from Quay
+- Saves image to local folder in openfire/
+- generates ISO from the openfire/ directory contents
+
 # Install
+
+- Mount the ISO
+- Run as an unprivileged user from terminal:
 
 ```
 ./install.sh
@@ -10,3 +23,4 @@ Created this quickly for a client that needed to install openfire chat server on
 
 - loads container image from disk into cache
 - Puts a podman quadlet file in ~/.config/containers/systemd/openfire.container
+- starts service with `systemctl --user start openfire`
