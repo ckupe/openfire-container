@@ -14,7 +14,7 @@ PublishPort=7070:7070
 PublishPort=7443:7443
 PublishPort=9090:9090
 PublishPort=9091:9091
-Image=localhost/openfire:latest
+Image=quay.io/ckuperst/openfire:latest
 ContainerName=openfire
 Mount=type=volume,src=openfire-database,destination=/opt/openfire/embedded-db
 Mount=type=volume,src=openfire-conf,destination=/opt/openfire/conf
